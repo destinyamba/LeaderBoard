@@ -1,0 +1,153 @@
+* {
+    margin: 0rem;
+    border: 0rem;
+    padding: 0rem;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+body {
+    font-size: 1.2em;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/**HEADER**/
+header {
+    margin: 0rem 0rem;
+    border: 0rem 0rem;
+    padding: 0rem 0rem;
+    width: auto;
+    height: 5rem;
+    text-align: center;
+    background-color: rgb(71, 71, 71);
+    border-bottom: .2rem solid #7e0101;
+}
+
+h1 {
+    margin: 0rem 0rem;
+    border: 0rem 0rem;
+    padding: 0rem 0rem;
+    font-size: 3.5em;
+}
+
+/**LISTS**/
+#list {
+    width: 40rem;
+    height: 3rem;
+    padding: 0rem 0rem;
+    position: absolute;
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-left: 40%;
+    list-style-type: none;
+    transform: skew(-40deg);
+    background-image: linear-gradient(to right, rgba(245, 245, 245, 0.596), rgb(219, 61, 61));
+    background-color: rgb(219, 61, 61);
+    display: none;
+}
+
+ul, li {
+    list-style: none;
+    color: rgb(211, 211, 211);
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+/**Right triangle gradient**/
+#right_gradient {
+    width: 0rem;
+    height: 0rem;
+    border-top: 32.5rem solid transparent;
+    border-right: 30rem solid #7e010193;
+    border-left: 0rem solid transparent;
+    float: right;
+}
+
+/**Left triangle gradient**/
+#left_gradient {
+    width: 0rem;
+    height: 0rem;
+    border-top: 0rem solid #7e01015e;
+    border-right: 0rem solid transparent;
+    border-left: 30rem solid #7e01015e;
+    border-bottom: 32rem solid transparent;
+}
+
+/**FORM**/
+#form {
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    background-color: rgb(219, 61, 61);
+    position: absolute;
+    bottom: 0rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+#main {
+    border: .1rem solid rgb(112, 109, 109);
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+    margin-left: 1rem;
+    padding-top: 1rem;
+    padding-right: .2rem;
+    padding-bottom: 1.5rem;
+    padding-left: .2rem;
+    display: none;
+    height: 4rem;
+}
+/**buttons**/
+.btn {
+    border: .02rem solid rgb(114, 114, 114);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: .7rem .4rem;
+    color: white;
+    background-color: rgb(216, 31, 31);
+}
+
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.425), 0 17px 50px 0 rgba(0, 0, 0, 0.425);
+}
+/**text input**/
+.name {
+    border: .02rem solid rgb(114, 114, 114);
+    border-radius: 1.5rem;
+    background-color: rgb(241, 241, 132);
+}
+/**select input**/ 
+.country {
+    border: .02rem solid rgb(114, 114, 114);
+    border-radius: 1rem;
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(241, 241, 132);
+  } 
+
+  /*MEDIA QUERIES*/
+
+  /* Extra large devices (large laptops and desktops, 1680px and up) */
+@media only screen and (min-width: 1680px) {
+    #right_gradient {
+        border-top: 50.3rem;
+    }
+    #left_gradient {
+        border-left: 50rem;
+    }
+  }
+
+  /* Extra smaller devices (small laptops and desktops, 960px and up) */
+@media only screen and (max-width: 1200px) {
+    #right_gradient, #left_gradient {
+        display: none;
+    }
+   #list {
+    width: 20rem;
+   }
+}

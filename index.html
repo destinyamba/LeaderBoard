@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>LeaderBoard</title>
+</head>
+<body>
+    <!--This is my header-->
+    <header>
+        <h1>LEADERBOARD</h1>
+    </header>
+
+    <!--This is where the lists append-->
+    <ul id="list">
+        <li></li>
+    </ul>
+        
+
+    <!--This is to add the left and right triangle gradients-->
+    <div id="right_gradient"></div>
+    <div id="left_gradient"></div>
+
+    <!--This is where the form begins-->
+    <div id="form">
+        <button id="button" type="button" class="btn">Add New Information</button>
+        <form id="main">
+            <p>Add New Player to List</p>
+            Name:
+            <input type="text" name="name" id="name" class="name" size="20"> 
+            Points Obtained:
+            <input type="text" name="points" id="points" class="name" size="10">
+            Country:
+            <select id="select" class="country" name="country">
+                <option value="England">England</option>
+                <option value="Northern Ireland">Northern Ireland</option>
+                <option value="Scotland">Scotland</option>
+                <option value="Wales">Wales</option>
+            </select>
+            <input id="show" type="button" class="btn" value="Add New Player Information">
+                
+        </form>
+
+    </div>  
+
+    <!--jQuery Begins-->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
